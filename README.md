@@ -12,5 +12,5 @@ This application is designed for you to keep track of all your workouts. It give
 * Utilize MongoDB and Mongoose Schema to create, edit and get data
 * Create API routes and HTML routes to make the application function
 
-
+MongoDB connection thorugh mongoose still needs to be initialized to store data******
 
