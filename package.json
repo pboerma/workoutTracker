@@ -1,7 +1,7 @@
 {
   "name": "mongoose_skeleton",
   "version": "1.0.0",
-  "description": "",
+  "description": "This app is a handy tool to help users keep track of their daily workouts in order to reach  their fitness goals quicker. It allows users to log multiple exercises in a workout on a given day, track the name, type, weight, sets, reps, and duration of exercise. If the exercise is a cardio exercise, user should be able to track the distance traveled.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -14,8 +14,17 @@
   "dependencies": {
     "dotenv": "^8.2.0",
     "express": "^4.16.3",
-    "mongoose": "^5.3.16",
+    "mongoose": "^5.11.15",
     "morgan": "^1.9.1",
     "path": "^0.12.7"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pboerma/workoutTracker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pboerma/workoutTracker/issues"
+  },
+  "homepage": "https://github.com/pboerma/workoutTracker#readme"
 }
