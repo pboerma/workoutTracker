@@ -4,13 +4,13 @@ This application is designed for you to keep track of all your workouts. It give
 
 
 ## Demo
-Heroku Deployment:
+* Heroku Deployment:  https://workouttrackermongo.herokuapp.com/
+* Github Repo:  https://github.com/pboerma/workoutTracker
 
 
 ## Development
 * Utilize MongoDB and Mongoose Schema to create, edit and get data
 * Create API routes and HTML routes to make the application function
 
-## Credits
 
 
