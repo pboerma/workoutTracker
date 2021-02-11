@@ -16,13 +16,13 @@ Run node server.js in your terminal
 
 
 ## Demo
-Heroku Deployment:
+* Heroku Deployment:  https://workouttrackermongo.herokuapp.com/
+* Github Repo:  https://github.com/pboerma/workoutTracker
 
 
 ## Development
 * Utilize MongoDB and Mongoose Schema to create, edit and get data
 * Create API routes and HTML routes to make the application function
 
-## Credits
-
+MongoDB connection thorugh mongoose still needs to be initialized to store data******
 
