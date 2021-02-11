@@ -1,35 +1,27 @@
-// Server.js - This file is the initial starting point for the Node/Express server.
-// *** Dependencies
 const express = require("express");
+const logger = require("morgan");
 const mongoose = require("mongoose");
-const dotenv = require("dotenv");
+//! require("./seeders/seed"); // Either npm run seed or keep this in here uncommented and it will run the seed
 
-// Sets up the Express App
+const PORT = process.env.PORT || 3005;
+
 const app = express();
-const PORT = process.env.PORT || 5000;
 
-// Sets up the Express app to handle data parsing
+app.use(logger("dev"));
+
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-
-// Static directory
 app.use(express.static("public"));
 
-// mongoose.connect(process.env.MONGODB_URI || 
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/workout"
-mongoose.connect(MONGODB_URI, {
-useNewUrlParser: true,
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {
+  useNewUrlParser: true,
   useFindAndModify: false
 });
 
-// Requiring our models for syncing
-const db = require("./models");
-
-// Routes---app.use
-app.use(require("./routes/api-routes.js"));
-app.use(require("./routes/html-routes.js"));
+//require(apiRoute)(app);
+require("./routes/htmlroutes")(app);
+require("./routes/apiroutes")(app);
 
 app.listen(PORT, () => {
-    console.log(`App running on port ${PORT}!`);
-  });
-  
+  console.log(`App running on port ${PORT}!`);
+});
